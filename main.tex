@@ -1,0 +1,52 @@
+% THIS TEMPLATE IS A WORK IN PROGRESS
+
+\documentclass{article}
+
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+%\lhead{\includegraphics[width=0.2\textwidth]{nyush-logo.pdf}}
+\fancypagestyle{firstpage}{%
+  \lhead{NYU Shanghai}
+  \rhead{
+  %%%% COMMENT OUT / UNCOMMENT THE LINES BELOW TO FIT WITH YOUR MAJOR(S)
+  %\&
+  %Data
+   Machine Learning 2021}
+}
+
+%%%% PROJECT TITLE
+\title{Email Response Suggestions}
+
+%%%% NAMES OF ALL THE STUDENTS INVOLVED (first-name last-name)
+\author{\href{mailto:author1@nyu.edu}{Dianjing \ Fan}, \href{mailto:yy2949@nyu.edu}{Yukai \ Yang}}
+
+\date{\vspace{-5ex}} %NO DATE
+
+
+\begin{document}
+\maketitle
+\thispagestyle{firstpage}
+
+\section*{Introduction}
+
+Nowadays adults need to spend a lot of time reading and replying to the emails. What often bothers us is to decide how to reply properly in various different cases.  In this project, we try to use our machine learning skills to develop a model that can give people some suggestions for email responses.\\ 
+We have seen such applications in some big email websites. Indeed, our project is inspired by Google's works. Since we are just a small team of two undergraduate students, we might not end up with a large and comprehensive result as they did in Gmail. But we expect to get a well-trained model that could recognize the main information in emails and give some choices of responses, so that the user could save the time to find out what they should write.\\
+To do that, we will need a dataset of emails to train our model, with various machine learning such as NLP, SVM, CNN, etc. to make it more practical.
+%%% Need a link for Google's paper in paragraph 2.
+%%% Google's paper: https://static.googleusercontent.com/media/research.google.com/zh-CN//pubs/archive/45189.pdf
+
+\section*{Objectives}
+
+In the project we will be using the email dataset of Enron Corporation. This dataset is good for us to use because it is quite large: 500,000 emails in the dataset, and many of them are sent/received by the same person, namely, employee of the company. Such a dataset should be sufficient for us to use various algorithms to find an optimized model.\\
+(Notes: since we are still learning new ML algorithms, the following ideas may be modified in later days.)\\
+First, to have a brief understanding of what the email is about, we will need NLP to analyze the text.
+%%%%  Dataset Weblink on Kaggle: https://www.kaggle.com/wcukierski/enron-email-dataset
+%%%% Project notebook on Kaggle: https://www.kaggle.com/yy2949/notebook-ml-project/edit
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+
+
+\end{document}
